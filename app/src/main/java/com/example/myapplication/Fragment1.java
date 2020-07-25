@@ -3,10 +3,18 @@ package com.example.myapplication;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.example.myapplication.Adapter.AdaptadorCarpeta;
+import com.example.myapplication.Model.Carpeta;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +22,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Fragment1 extends Fragment {
+    RecyclerView recyclerView;
+    ArrayList<Carpeta> listaCarpetas;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +69,25 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1, container, false);
+        View vista= inflater.inflate(R.layout.fragment_1, container, false);
+        listaCarpetas= new ArrayList<>();
+        recyclerView= vista.findViewById(R.id.lstListaUsuario);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        llenarLista();
+
+        AdaptadorCarpeta adaptadorCarpeta= new AdaptadorCarpeta(listaCarpetas);
+        //AdaptadorRecyclerEmpleo adaptadorRecycler=new AdaptadorRecyclerEmpleo(lstEmpleados);
+
+        recyclerView.setAdapter(adaptadorCarpeta);
+        return vista;
+    }
+
+    private void llenarLista() {
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
+        listaCarpetas.add(new Carpeta("Titulo","item","dato","hora"));
     }
 }

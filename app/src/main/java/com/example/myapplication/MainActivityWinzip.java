@@ -14,15 +14,15 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity2 extends AppCompatActivity  implements
-        NavigationView.OnNavigationItemSelectedListener{
+public class MainActivityWinzip extends AppCompatActivity implements
+        NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
     NavigationView navView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main_winzip);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -64,7 +64,7 @@ public class MainActivity2 extends AppCompatActivity  implements
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-          }
+        }
     }
 
     @Override
@@ -73,9 +73,9 @@ public class MainActivity2 extends AppCompatActivity  implements
 
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
-            case R.id.menu_seccion_1:
+            case R.id.menu_winzip_seccion_1:
                 fragment = new Fragment1();
-               fragmentTransaction = true;
+                fragmentTransaction = true;
                 break;
             case R.id.menu_seccion_2:
                 fragment = new Fragment2();
@@ -90,8 +90,8 @@ public class MainActivity2 extends AppCompatActivity  implements
 
         if(fragmentTransaction) {
             getSupportFragmentManager().beginTransaction()
-            .replace(R.id.content_frame, fragment)
-            .commit();
+                    .replace(R.id.content_frame, fragment)
+                    .commit();
 
             menuItem.setChecked(true);
             getSupportActionBar().setTitle(menuItem.getTitle());

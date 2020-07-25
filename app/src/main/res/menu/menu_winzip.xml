@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_winzip_seccion_1"
+            android:icon="@drawable/principal"
+            android:title="Recent"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@drawable/social"
+            android:title="Favorites"/>
+    </group>
+    <item
+        android:id="@+id/navigation_subheader1"
+        android:title="Places">
+        <menu>
+            <item
+                android:id="@+id/menu_opcion_files"
+                android:icon="@drawable/coordinacion"
+                android:title="My Files"/>
+            <item
+                android:id="@+id/menu_opcion_storage"
+                android:icon="@drawable/coordinacion"
+                android:title="Storage"/>
+            <item
+                android:id="@+id/menu_opcion_photo"
+                android:icon="@drawable/coordinacion"
+                android:title="Photos"/>
+            <item
+                android:id="@+id/menu_wopcion_music"
+                android:icon="@drawable/coordinacion"
+                android:title="Muscic"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/navigation_network"
+        android:title="Network and Cloud">
+        <menu>
+            <item
+                android:id="@+id/menu_notwork"
+                android:icon="@drawable/coordinacion"
+                android:title="Network"/>
+            <item
+                android:id="@+id/menu_opcion_dropbox"
+                android:icon="@drawable/coordinacion"
+                android:title="Dropbox"/>
+            <item
+                android:id="@+id/menu_opcion_google"
+                android:icon="@drawable/coordinacion"
+                android:title="Google Drive"/>
+            <item
+                android:id="@+id/menu_opcion_music"
+                android:icon="@drawable/coordinacion"
+                android:title="Muscic"/>
+        </menu>
+    </item>
+</menu>
