@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#0088f1"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             />
@@ -38,5 +38,6 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/cabezawinzip"
         app:menu="@menu/menu_winzip" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

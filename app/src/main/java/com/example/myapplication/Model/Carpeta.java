@@ -27,6 +27,7 @@ public class Carpeta {
     @SerializedName("img")
     @Expose
     private String img;
+    private  String detalle;
 
     private ImageView imagen;
 
@@ -35,6 +36,15 @@ public class Carpeta {
         this.item = item;
         this.date = date;
         this.hour = hour;
+        this.detalle=item+" "+date+" "+" "+hour;
+    }
+
+    public String getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(String detalle) {
+        this.detalle = detalle;
     }
 
     public String getTitle() {

@@ -35,11 +35,7 @@ public class AdaptadorCarpeta extends RecyclerView.Adapter<AdaptadorCarpeta.View
     @Override
     public void onBindViewHolder(@NonNull AdaptadorCarpeta.ViewHolder holder, int position) {
         holder.title.setText(listaCarpetas.get(position).getTitle());
-        holder.item.setText(listaCarpetas.get(position).getItem());
-        holder.date.setText(listaCarpetas.get(position).getDate());
-        holder.hour.setText(listaCarpetas.get(position).getHour());
-        Uri uriImagen = Uri.parse("@drawable/carpeta");
-        //holder.imageView.setImageURI(uriImagen);
+        holder.detalle.setText(listaCarpetas.get(position).getDetalle());
     }
 
     @Override
@@ -48,14 +44,12 @@ public class AdaptadorCarpeta extends RecyclerView.Adapter<AdaptadorCarpeta.View
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView title, item, date, hour;
+        TextView title, detalle;
         ImageView imageView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title= (TextView) itemView.findViewById(R.id.lbltitle);
-            item=(TextView) itemView.findViewById(R.id.lblitem);
-            date= (TextView) itemView.findViewById(R.id.lbldate);
-            hour=(TextView) itemView.findViewById(R.id.lblhour);
+            detalle=(TextView) itemView.findViewById(R.id.lblDetalle);
             //imageView = (ImageView)itemView.findViewById(R.id.imgCarp);
         }
     }

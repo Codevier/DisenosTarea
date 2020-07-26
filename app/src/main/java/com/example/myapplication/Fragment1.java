@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -73,6 +74,7 @@ public class Fragment1 extends Fragment {
         listaCarpetas= new ArrayList<>();
         recyclerView= vista.findViewById(R.id.lstListaUsuario);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
         llenarLista();
 
         AdaptadorCarpeta adaptadorCarpeta= new AdaptadorCarpeta(listaCarpetas);

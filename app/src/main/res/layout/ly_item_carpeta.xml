@@ -8,12 +8,12 @@
         android:id="@+id/imgCarp"
         android:layout_width="100dp"
         android:layout_height="76dp"
-        android:src="@drawable/carpeta"
+        android:src="@drawable/carptea_winzip"
+        android:paddingTop="5dp"
         />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="5dp">
 
@@ -23,25 +23,12 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold" />
-
         <TextView
-            android:id="@+id/lblitem"
+            android:id="@+id/lblDetalle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textStyle="italic" />
-
-        <TextView
-            android:id="@+id/lbldate"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:textStyle="normal" />
-        <TextView
-            android:id="@+id/lblhour"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="13sp"
-            android:textStyle="normal" />
+            android:textStyle="bold" />
     </LinearLayout>
+
 </LinearLayout>

@@ -16,19 +16,19 @@
         <menu>
             <item
                 android:id="@+id/menu_opcion_files"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/files"
                 android:title="My Files"/>
             <item
                 android:id="@+id/menu_opcion_storage"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/storage"
                 android:title="Storage"/>
             <item
                 android:id="@+id/menu_opcion_photo"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/photo"
                 android:title="Photos"/>
             <item
                 android:id="@+id/menu_wopcion_music"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/music"
                 android:title="Muscic"/>
         </menu>
     </item>
@@ -38,20 +38,16 @@
         <menu>
             <item
                 android:id="@+id/menu_notwork"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/network"
                 android:title="Network"/>
             <item
                 android:id="@+id/menu_opcion_dropbox"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/drobox"
                 android:title="Dropbox"/>
             <item
                 android:id="@+id/menu_opcion_google"
-                android:icon="@drawable/coordinacion"
+                android:icon="@drawable/google_drive"
                 android:title="Google Drive"/>
-            <item
-                android:id="@+id/menu_opcion_music"
-                android:icon="@drawable/coordinacion"
-                android:title="Muscic"/>
         </menu>
     </item>
 </menu>
