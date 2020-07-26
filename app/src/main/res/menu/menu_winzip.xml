@@ -15,7 +15,7 @@
         android:title="Places">
         <menu>
             <item
-                android:id="@+id/menu_opcion_files"
+                android:id="@+id/menu_winzip_files"
                 android:icon="@drawable/files"
                 android:title="My Files"/>
             <item

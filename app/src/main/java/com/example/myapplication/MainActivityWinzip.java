@@ -73,7 +73,7 @@ public class MainActivityWinzip extends AppCompatActivity implements
 
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
-            case R.id.menu_winzip_seccion_1:
+            case R.id.menu_winzip_files:
                 fragment = new Fragment1();
                 fragmentTransaction = true;
                 break;
