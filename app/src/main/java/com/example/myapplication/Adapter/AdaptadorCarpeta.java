@@ -1,6 +1,5 @@
 package com.example.myapplication.Adapter;
 
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.Model.Carpeta;
 import com.example.myapplication.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -28,7 +26,7 @@ public class AdaptadorCarpeta extends RecyclerView.Adapter<AdaptadorCarpeta.View
     @Override
     public AdaptadorCarpeta.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View item = inflater.inflate(R.layout.ly_item_carpeta, null);
+        View item = inflater.inflate(R.layout.ly_item_winzip, null);
         return new AdaptadorCarpeta.ViewHolder(item);
     }
 

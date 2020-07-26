@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,22 +23,27 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.mnutoolbar , menu);
+        getMenuInflater().inflate(R.menu.menu_elegir_diseno, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        Intent intent;
         switch (item.getItemId()) {
             case R.id.mnuNuevo:
-                Toast.makeText(this.getApplicationContext(),"Ha presionado opción Nuevo ",Toast.LENGTH_LONG).show();
+                Toast.makeText(this.getApplicationContext(),"Ha seleccionado el diseño de WinZip",Toast.LENGTH_LONG).show();
+                intent = new Intent(this, MainActivityWinzip.class);
+                startActivity(intent);
                 return true;
             case R.id.mnuBuscar:
-                Toast.makeText(this.getApplicationContext(),"Ha presionado opción Buscar " ,Toast.LENGTH_LONG).show();
+                Toast.makeText(this.getApplicationContext(),"Ha seleccionado el diseño de Gmail" ,Toast.LENGTH_LONG).show();
+                intent = new Intent(this, MainActivityGmail.class);
+                startActivity(intent);
                 return true;
             case R.id.mnuSetting:
-                Toast.makeText(this.getApplicationContext(),"Ha presionado opción Setting" ,Toast.LENGTH_LONG).show();
+                Toast.makeText(this.getApplicationContext(),"Ha seleccionado el diseño del Drive" ,Toast.LENGTH_LONG).show();
                 return true;
             default:
 

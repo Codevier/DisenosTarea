@@ -1,20 +1,19 @@
 package com.example.myapplication;
 
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivityWinzip extends AppCompatActivity implements
+public class MainActivityGmail extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
@@ -22,23 +21,23 @@ public class MainActivityWinzip extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_winzip);
+        setContentView(R.layout.activity_main_gmail);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_gmail);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.iconmenu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        navView = (NavigationView)findViewById(R.id.nav_view);
+        navView = (NavigationView)findViewById(R.id.nav_view_gmail);
         navView.setNavigationItemSelectedListener(this);
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_opciones,menu);
-
-        MenuItem menuItem=menu.findItem(R.id.action_buscar);
+        getMenuInflater().inflate(R.menu.menu_opciones_gmail,menu);
+        /*
+        MenuItem menuItem=menu.findItem(R.id.action_gmail_buscar);
         SearchView searchView=(SearchView) menuItem.getActionView();
         searchView.setQueryHint("Buscar en el correo electronico");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -52,6 +51,8 @@ public class MainActivityWinzip extends AppCompatActivity implements
                 return false;
             }
         });
+
+         */
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -59,7 +60,7 @@ public class MainActivityWinzip extends AppCompatActivity implements
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+                drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout_gmail);
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
             default:
@@ -73,6 +74,10 @@ public class MainActivityWinzip extends AppCompatActivity implements
 
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
+            case R.id.menu_gmail_seccion_1:
+                fragment = new Fragment_Gmail();
+                fragmentTransaction = true;
+                break;
             case R.id.menu_winzip_files:
                 fragment = new Fragment_WinZip();
                 fragmentTransaction = true;
@@ -86,11 +91,12 @@ public class MainActivityWinzip extends AppCompatActivity implements
                 fragmentTransaction = true;
                 break;
 
+
         }
 
         if(fragmentTransaction) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_frame, fragment)
+                    .replace(R.id.content_frame_gmail, fragment)
                     .commit();
 
             menuItem.setChecked(true);

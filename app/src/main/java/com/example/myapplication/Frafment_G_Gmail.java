@@ -10,21 +10,22 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.myapplication.Adapter.AdaptadorCarpeta;
+import com.example.myapplication.Adapter.AdaptadorGmail;
 import com.example.myapplication.Model.Carpeta;
+import com.example.myapplication.Model.Gmail;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Fragment1#newInstance} factory method to
+ * Use the {@link Frafment_G_Gmail#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Fragment1 extends Fragment {
+public class Frafment_G_Gmail extends Fragment {
     RecyclerView recyclerView;
-    ArrayList<Carpeta> listaCarpetas;
+    ArrayList<Gmail> listaGmail;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +36,7 @@ public class Fragment1 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Fragment1() {
+    public Frafment_G_Gmail() {
         // Required empty public constructor
     }
 
@@ -45,11 +46,11 @@ public class Fragment1 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment1.
+     * @return A new instance of fragment Frafment_G_Gmail.
      */
     // TODO: Rename and change types and number of parameters
-    public static Fragment1 newInstance(String param1, String param2) {
-        Fragment1 fragment = new Fragment1();
+    public static Frafment_G_Gmail newInstance(String param1, String param2) {
+        Frafment_G_Gmail fragment = new Frafment_G_Gmail();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -70,21 +71,35 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View vista= inflater.inflate(R.layout.fragment_1, container, false);
-        listaCarpetas= new ArrayList<>();
-        recyclerView= vista.findViewById(R.id.lstListaUsuario);
+        View vista= inflater.inflate(R.layout.fragment_gmail, container, false);
+        listaGmail= new ArrayList<>();
+        recyclerView= vista.findViewById(R.id.lstListaCorreos);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
+        //recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
         llenarLista();
 
-        AdaptadorCarpeta adaptadorCarpeta= new AdaptadorCarpeta(listaCarpetas);
-        //AdaptadorRecyclerEmpleo adaptadorRecycler=new AdaptadorRecyclerEmpleo(lstEmpleados);
-
+        AdaptadorGmail adaptadorCarpeta= new AdaptadorGmail(listaGmail);
         recyclerView.setAdapter(adaptadorCarpeta);
         return vista;
     }
-
     private void llenarLista() {
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
+        /*
         listaCarpetas.add(new Carpeta("Alarmas","0 items","2017-12-31","19:00"));
         listaCarpetas.add(new Carpeta("Android","3 items","2020-02-01","20:23"));
         listaCarpetas.add(new Carpeta("UTEQ","87 items","2020-07-26","13:17"));
@@ -98,6 +113,8 @@ public class Fragment1 extends Fragment {
         listaCarpetas.add(new Carpeta("Personal","7 items","2020-03-15","11:01"));
         listaCarpetas.add(new Carpeta("Memes","100 items","2020-02-13","03:33"));
         listaCarpetas.add(new Carpeta("Historias","77 items","2020-01-01","01:00"));
+
+         */
 
 
 

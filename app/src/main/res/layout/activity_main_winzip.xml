@@ -36,7 +36,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/cabezawinzip"
+        app:headerLayout="@layout/cabecera_winzip"
         app:menu="@menu/menu_winzip" />
 
 

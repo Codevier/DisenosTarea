@@ -74,7 +74,7 @@ public class MainActivity2 extends AppCompatActivity  implements
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
             case R.id.menu_seccion_1:
-                fragment = new Fragment1();
+                fragment = new Fragment_WinZip();
                fragmentTransaction = true;
                 break;
             case R.id.menu_seccion_2:
