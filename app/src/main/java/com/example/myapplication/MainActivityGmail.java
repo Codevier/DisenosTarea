@@ -36,23 +36,6 @@ public class MainActivityGmail extends AppCompatActivity implements
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_opciones_gmail,menu);
-        /*
-        MenuItem menuItem=menu.findItem(R.id.action_gmail_buscar);
-        SearchView searchView=(SearchView) menuItem.getActionView();
-        searchView.setQueryHint("Buscar en el correo electronico");
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
-            }
-        });
-
-         */
         return super.onCreateOptionsMenu(menu);
     }
 

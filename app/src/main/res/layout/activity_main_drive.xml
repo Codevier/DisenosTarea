@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/drawer_layout_drive"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivityWinzip">
+    tools:context=".MainActivityDrive">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,29 +15,29 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
-            app:title="WinZip"
-            android:id="@+id/toolbar"
+            app:title="Google Gmail"
+            android:id="@+id/toolbar_drive"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:background="#0088f1"
+            android:background="#FFFFFF"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             />
 
         <FrameLayout
-            android:id="@+id/content_frame"
+            android:id="@+id/content_frame_drive"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/nav_view_drive"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/cabecera_winzip"
-        app:menu="@menu/menu_flotante_winzip" />
+        app:headerLayout="@layout/cabecera_drive"
+        app:menu="@menu/menu_flotante_drive" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

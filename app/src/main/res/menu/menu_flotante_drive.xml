@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_drive_reciente"
+        android:icon="@drawable/reciente"
+        android:title="Reciente" />
+    <item
+        android:id="@+id/menu_drive_destacado"
+        android:icon="@drawable/destacado"
+        android:title="Destacado" />
+    <item
+        android:id="@+id/menu_drive_sinconec"
+        android:icon="@drawable/sin_coneccion"
+        android:title="Sin Conexión" />
+    <item
+        android:id="@+id/menu_drive_papelera"
+        android:icon="@drawable/papelera"
+        android:title="Papelera" />
+    <item
+        android:id="@+id/menu_drive_notific"
+        android:icon="@drawable/notificacion"
+        android:title="Notificaciones" />
+    <item
+        android:id="@+id/menu_drive_conf"
+        android:icon="@drawable/configuracion"
+        android:title="Configuración" />
+    <item
+        android:id="@+id/menu_drive_ayuda"
+        android:icon="@drawable/ayuda"
+        android:title="Ayuda y comentarios" />
+</menu>

@@ -37,6 +37,6 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/cabecera"
-        app:menu="@menu/menu2" />
+        app:menu="@menu/menu_flotante_drive" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

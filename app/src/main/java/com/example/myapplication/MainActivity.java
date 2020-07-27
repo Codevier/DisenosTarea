@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.mnuSetting:
                 Toast.makeText(this.getApplicationContext(),"Ha seleccionado el diseño del Drive" ,Toast.LENGTH_LONG).show();
+                intent = new Intent(this, MainActivityDrive.class);
+                startActivity(intent);
                 return true;
             default:
 
