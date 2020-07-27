@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class Fragment_Drive extends Fragment {
     RecyclerView recyclerView;
-    ArrayList<Drive> listaGmail;
+    ArrayList<Drive> listaDrive;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -69,31 +69,21 @@ public class Fragment_Drive extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View vista= inflater.inflate(R.layout.fragment__drive, container, false);
-        listaGmail= new ArrayList<>();
+        listaDrive= new ArrayList<>();
         recyclerView= vista.findViewById(R.id.lstListaDrive);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         //recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL));
         llenarLista();
 
-        AdaptadorDrive adaptadorCarpeta= new AdaptadorDrive(listaGmail);
+        AdaptadorDrive adaptadorCarpeta= new AdaptadorDrive(listaDrive);
         recyclerView.setAdapter(adaptadorCarpeta);
         return vista;
     }
     private void llenarLista() {
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
-        listaGmail.add(new Drive("Documento","creado hoy"));
+        listaDrive.add(new Drive("Disposita 7","Documento de programacion orientado a objetos","2"));
+        listaDrive.add(new Drive("Disposita 6","Documento de comercio electronico","1"));
+        listaDrive.add(new Drive("Horario de clases","Documento de horario de clases","3"));
+
 
     }
 }

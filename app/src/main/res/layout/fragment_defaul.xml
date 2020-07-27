@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_defaul"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_shape"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:id="@+id/circleText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Opcion no programada"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/Text"/>
+
+</FrameLayout>

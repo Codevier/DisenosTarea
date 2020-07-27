@@ -17,9 +17,22 @@ public class Drive {
     @Expose
     private String descripcion;
 
-    public Drive(String encabezado, String descripcion) {
+    @SerializedName("img")
+    @Expose
+    private String img;
+
+    public Drive(String encabezado, String descripcion, String img) {
         this.encabezado = encabezado;
         this.descripcion = descripcion;
+        this.img=img;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getEncabezado() {

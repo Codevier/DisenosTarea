@@ -10,6 +10,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/appbar"
+        app:title="Presentacion"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:minHeight="?attr/actionBarSize"
@@ -24,7 +25,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="76dp"
-        android:text="Hello World!" />
+        android:text="Eliga desde el ToolBar el diseño que desee ver" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating_action_button"

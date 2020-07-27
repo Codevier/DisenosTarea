@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
-            app:title="Google Gmail"
+            app:title="Google Drive"
             android:id="@+id/toolbar_drive"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"

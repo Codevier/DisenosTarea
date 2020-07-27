@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_buscar"
+        android:title="Search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        app:actionViewClass="com.google.android.material.bottomappbar.BottomAppBar"/>
+    <item
+        android:id="@+id/action_buscar2"
+        android:title="Search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        app:actionViewClass="com.google.android.material.bottomappbar.BottomAppBar"/>
+</menu>

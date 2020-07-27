@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:maxEms="10"
                 android:singleLine="true"
-                android:text="Main "
+                android:text="Main"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:id="@+id/subText"/>

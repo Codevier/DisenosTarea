@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
 
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, MainActivity.class);
+        Toast.makeText(this.getApplicationContext(),"Boton deshabilitado" ,Toast.LENGTH_LONG).show();
         startActivity(intent);
         
     }

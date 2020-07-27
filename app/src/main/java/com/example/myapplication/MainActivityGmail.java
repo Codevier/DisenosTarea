@@ -35,7 +35,7 @@ public class MainActivityGmail extends AppCompatActivity implements
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_opciones_gmail,menu);
+        getMenuInflater().inflate(R.menu.menu_toolbar_gmail,menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -65,12 +65,8 @@ public class MainActivityGmail extends AppCompatActivity implements
                 fragment = new Fragment_WinZip();
                 fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_2:
-                fragment = new Fragment2();
-                fragmentTransaction = true;
-                break;
-            case R.id.menu_seccion_3:
-                fragment = new Fragment3();
+            default:
+                fragment = new Fragment_defaul();
                 fragmentTransaction = true;
                 break;
 

@@ -36,8 +36,9 @@ public class MainActivityWinzip extends AppCompatActivity implements
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        getMenuInflater().inflate(R.menu.menu_toolbar_winzip,menu);
 
+        /*
         MenuItem menuItem=menu.findItem(R.id.action_buscar);
         SearchView searchView=(SearchView) menuItem.getActionView();
         searchView.setQueryHint("Buscar en el correo electronico");
@@ -52,6 +53,8 @@ public class MainActivityWinzip extends AppCompatActivity implements
                 return false;
             }
         });
+
+         */
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -77,12 +80,8 @@ public class MainActivityWinzip extends AppCompatActivity implements
                 fragment = new Fragment_WinZip();
                 fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_2:
-                fragment = new Fragment2();
-                fragmentTransaction = true;
-                break;
-            case R.id.menu_seccion_3:
-                fragment = new Fragment3();
+            default:
+                fragment = new Fragment_defaul();
                 fragmentTransaction = true;
                 break;
 

@@ -101,24 +101,6 @@ public class Fragment_Gmail extends Fragment {
         listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
         listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
         listaGmail.add(new Gmail("JEANNY XAVIER MUÑOZ PISCO","Respaldo de programa","Aqui te envie todos los documentos...","25 jul"));
-        /*
-        listaCarpetas.add(new Carpeta("Alarmas","0 items","2017-12-31","19:00"));
-        listaCarpetas.add(new Carpeta("Android","3 items","2020-02-01","20:23"));
-        listaCarpetas.add(new Carpeta("UTEQ","87 items","2020-07-26","13:17"));
-        listaCarpetas.add(new Carpeta("Moviles","75 items","2020-07-25","23:59"));
-        listaCarpetas.add(new Carpeta("Programacion","7 items","2020-07-25","23:19"));
-        listaCarpetas.add(new Carpeta("Proyecto","70 items","2020-07-23","13:09"));
-        listaCarpetas.add(new Carpeta("Mis documentos","5 items","2020-07-20","20:12"));
-        listaCarpetas.add(new Carpeta("Imagenes","10 items","2020-07-02","13:45"));
-        listaCarpetas.add(new Carpeta("Reportes","7 items","2020-06-25","12:56"));
-        listaCarpetas.add(new Carpeta("Respaldo","1 items","2020-06-20","12:59"));
-        listaCarpetas.add(new Carpeta("Personal","7 items","2020-03-15","11:01"));
-        listaCarpetas.add(new Carpeta("Memes","100 items","2020-02-13","03:33"));
-        listaCarpetas.add(new Carpeta("Historias","77 items","2020-01-01","01:00"));
-
-         */
-
-
 
     }
 }

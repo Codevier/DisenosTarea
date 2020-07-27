@@ -34,7 +34,7 @@ public class MainActivityDrive extends AppCompatActivity implements
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_opciones_gmail,menu);
+        getMenuInflater().inflate(R.menu.menu_toolbar_gmail,menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -54,29 +54,23 @@ public class MainActivityDrive extends AppCompatActivity implements
 
         Fragment fragment = null;
         switch (menuItem.getItemId()) {
-            case R.id.menu_gmail_seccion_1:
-                fragment = new Fragment_Gmail();
+            case R.id.menu_drive_reciente:
+                fragment = new Fragment_Drive();
                 fragmentTransaction = true;
                 break;
             case R.id.menu_winzip_files:
                 fragment = new Fragment_WinZip();
                 fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_2:
-                fragment = new Fragment2();
+            default:
+                fragment = new Fragment_defaul();
                 fragmentTransaction = true;
                 break;
-            case R.id.menu_seccion_3:
-                fragment = new Fragment3();
-                fragmentTransaction = true;
-                break;
-
-
         }
 
         if(fragmentTransaction) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.content_frame_gmail, fragment)
+                    .replace(R.id.content_frame_drive, fragment)
                     .commit();
 
             menuItem.setChecked(true);
